@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  color: #000066;
+  font-family: 'Lora', serif;
+}
+
+.header {
+  background-color: #d0d0e1;
+  padding: 0px;
+  text-align: center;
+  color: #000066;
+  border-top: 10px solid #000066;
+  border-bottom: 10px solid #000066;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+th {
+  padding: 10px;
+  text-align: left;
+  background-color: #000066;
+  color: #d0d0e1;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  background-color: #d0d0e1;
+}
+
+#stock-line-chart {
+  margin: auto;
+}
+
+#header-centre {
+  text-align: center;
+}
+
+.number-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+footer {
+  margin-top: 10px;
+  background-color: #d0d0e1;
+  padding: 0px;
+  text-align: center;
+  color: #000066;
+  border-top: 10px solid #000066;
+  border-bottom: 10px solid #000066;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: point er;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000066;
+  background-color: #d0d0e1;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 8px #999;
+}
+
+button:hover {
+  background-color: #03c692
+}
+
+button:active {
+  background-color: #03c692;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+#save-purchase-button {
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+#remove-save {
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+#portfolio-value-display {
+  text-align: center;
+}
+
+#label-space {
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+#number-of-shares-remove {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+}
+
+nav {
+  background-color: #000066;
+  margin: 5px 0px;
+  padding: 5px;
+}
+
+/* div {
+background-color: #d0d0e1;
+} */
+
+/* Hicharts  */
+@import 'https://code.highcharts.com/css/highcharts.css';
+
+.highcharts-background {
+  fill: #d0d0e1;
+  stroke: #000066;
+  stroke-width: 2px;
+}
+
+.highcharts-title {
+  font-family: 'Lora', serif;
+  color: #000066;
+  font-size: 20px;
+}
+
+
+#stock-line-chart {
+  width: 80vw;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+a {
+  color: #000066;
+}
+
+a:visited {
+  color: #d0d0e1;
+}
+
+nav:hover {
+  color: #018e69
+}
+
+
+
+
+
+/* for numerals
+font-family: 'Roboto', sans-serif;
+
+for words
+font-family: 'Lora', serif; */

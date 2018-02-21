@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <script src="bundle.js"></script>
-    <title></title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="app-bundle.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lora|Roboto" rel="stylesheet">
+  <title>Peak Portfolio</title>
+</head>
 
+<body>
+
+  <div class="header">
+    <h1>Peak Portfolio</h1>
+    <p>Personal portfolio management</p>
+  </div>
+
+  <div class="topnav">
+  </div>
+
+  <!-- above the crease: total and pie chart -->
+
+  <div class="row" >
+    <div class="column">
+      <h2>Total portfolio value:</h2>
+      <p id="total-value"></p>
+      <button id="add-share">Add shares</button>
+    </div>
+    <div class="column">
+      <div class="pie-chart" id="pie-chart"></div>
+    </div>
+  </div>
+
+  <!-- centered table below the crease -->
+
+  <div class="row">
+
+    <h2 class="holdings-table">Portfolio holdings</h2>
+    <table id="shares-list">
+      <tr>
+        <th>Company Name</th>
+        <th>Company Ticker</th>
+        <th>Number of Shares</th>
+        <th>Closing Price ($)</th>
+        <th>Total Value ($)</th>
+        <th>Remove shares</th>
+      </tr>
+    </table>
+
+    <!-- This button opens the modal -->
+
+    <div class="row">
+      <div class="column">
+        <button id="openModalBtn">Add shares</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- below the shares list -->
+
+  <div class="row" >
+    <h2 class="holdings-table">Portfolio performance</h2>
+
+    <div id="line-chart">
+    </div>
+  </div>
+</div>
+
+<!-- modal element -->
+
+
+
+
+
+<!-- Modal box -->
+<div id="modalPorfolioUpdate" class="modal">
+
+  <!-- Modal box content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id='datalist-div'>
+
+      <label>Select a company:
+        <input list="companies" name="myBrowser" id="selected-company"/></label>
+        <datalist id="companies">
+        </datalist>
+        <label>Number of shares:
+          <input id="number-of-shares" type="text" /></label>
+
+          <button id="save-purchase-button">Save</button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="modalRemoveShares" class="modal">
+
+      <!-- Modal box content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Remove Shares</h3>
+        <div id='remove-shares-div'>
+
+        </div>
+
+      </div>
+    </div>
+    <footer>
+
+      <p>Created by Team Awesome in week fourteen at <a href="https://codeclan.com/" >CodeClan, Edinburgh</a></p>
+
+    </footer>
   </body>
-</html>
+  </html>
